@@ -110,7 +110,6 @@ top: 350px;
 .card{
     padding: 20px;
     width: 30%;
-    transition: background-color 10.1s solid;
 }
 
 .card:hover{
@@ -138,8 +137,62 @@ height: 230px;
 }
 
 .main-title{
-    margin: 60px 0;
+    margin: 100px 0;
     text-align: center;
-    font-size: 26px;
+    font-weight: 700;
+    font-size: 36px;
     font-family: 'Montserrat';
+    color: #221f20;
+}
+
+.cars{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car{
+    width: 25%;
+    padding: 20px;
+}
+
+.car:hover{
+    background-color: rgba(218, 216, 216, 0.452)
+}
+
+.car-title{
+    font-weight: 700;
+    text-align: center;
+    color: #221f20;
+    font-size: 24px;
+    line-height: 1.5;
+    
+}
+
+.car-subtitle, .car-credit{
+    font-weight: 400;
+    text-align: center;
+    color: #221f20;
+    opacity: .8;
+    font-size: 13px;
+    line-height: 1.7142857143;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.car-image{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.car-price{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.5;
+    color: #221f20;
+    text-align: center;
 }
