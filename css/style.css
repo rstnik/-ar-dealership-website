@@ -37,6 +37,17 @@ body{
     opacity: 0.3;
 }
 
+    
+
+.login, .reg{
+    background-color: #221f20;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    float: left;
+}
+
+
 .header-info{
 position: absolute;
 top: 350px;
@@ -204,7 +215,7 @@ footer{
     /* align-items: center; */
     background-color: #221f20;
     color: #fff;
-    height: 50vh;
+    height: 40vh;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -248,7 +259,9 @@ footer{
 
 .footer-nav-list{
     list-style: none;
+    padding: 0px;
 }
+
 
 li{
     margin-bottom: 20px;
@@ -256,5 +269,4 @@ li{
 
 .footer-nav-title{
     margin-bottom: 20px;
-    margin-left: 30px;
 }
