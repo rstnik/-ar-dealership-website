@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Покупцям</title>
 </head>
+
+<style>
+    table{
+        margin-top: 100px;
+    }
+</style>
+
 <body>
     <header class="header">
         <div class="container">
@@ -17,8 +24,7 @@
                     <a class="nav-item" href="./auto.html">АВТОМОБІЛІ</a>
                     <a class="nav-item" href="./moto.html">МОТОЦИКЛИ</a>
                     <a class="nav-item" href="./buyers.html">ПОКУПЦЯМ</a>
-                    <a class="nav-item" href="#">ВЛАСТНИКАМ</a>
-                    <a class="nav-item" href="#">СВІТ SUZUKI</a>
+                    <a class="nav-item" href="./suzuki.html">СВІТ SUZUKI</a>
                 </nav>
                 <div class="header-social">
                     <a class="header-social-link" href="https://www.instagram.com/"><img src="../images/insta.svg"
@@ -28,8 +34,100 @@
                     <a class="header-social-link" href="https://www.youtube.com/"><img src="../images/youtube.svg"
                             alt="youtube"></a>
                 </div>
+                <div class="header-buttons">
+                    <a class="login" href="../pages/login.html">Вхід</a>
+                    <a class="reg" href="../pages/reg.html">Регістрація</a>
+                </div>
             </div>
         </div>
     </header>
+    <div class="container">
+        <form action="#">
+            <table border="1" cellpadding="15" cellspacing="0" style="width: 60%;">
+                <thead>
+                    <th colspan="2">Пошук автомобіля</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Тип кузова</td>
+                        <td><select name="Тип кузова" value="Тип кузова">
+                                <option>Седан</option>
+                                <option>Хетчбек</option>
+                                <option>Універсал</option>
+                                <option>Купе</option>
+                                <option>Кабріолет</option>
+                                <option>Кросовер</option>
+                                <option>Позашляховик</option>
+                                <option>Пікап</option>
+                                <option>Лімузин</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Марка авто</td>
+                        <td><input type="text" name="Марка авто"></td>
+                    </tr>
+                    <tr>
+                        <td>Країна виробник</td>
+                        <td>
+                            <select name="Країна виробник" value="Країна виробник">
+                                <option>Китай</option>
+                                <option>Соединенные Штаты</option>
+                                <option>Япония</option>
+                                <option>Германия</option>
+                                <option>Южная Корея</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ціна (від і до)</td>
+                        <td>100$<input type="range">10.000$</td>
+                    </tr>
+                    <tr>
+                        <td>Рік випуску (від і до)</td>
+                        <td>1990<input type="range">2023</td>
+                    </tr>
+                    <tr>
+                        <td>Стан</td>
+                        <td>
+                            <input type="checkbox" name="Стан" value="Бита"> Бита
+                            <input type="checkbox" name="Стан" value="У кредиті"> У кредиті
+                            <input type="checkbox" name="Стан" value="Нерозмитнена"> Нерозмитнена
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Тип палива</td>
+                        <td>
+                            <input type="radio" name="Паливо" value="Бензин"> Бензин
+                            <input type="radio" name="Паливо" value="Дизельне пальнеі"> Дизельне пальне
+                            <input type="radio" name="Паливо" value="Електроенергія"> Електроенергія
+                            <input type="radio" name="Паливо" value="Газ"> Газ
+                            <input type="radio" name="Паливо" value="Гібрид"> Гібрид
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Тип коробки передач</td>
+                        <td>
+                            <input type="radio" name="Тип коробки передач" value="Тип коробки передач"> Механічна коробка
+                            передач
+                            <input type="radio" name="Тип коробки передач" value="Тип коробки передач"> Автоматична коробка
+                            передач
+                    </tr>
+                    <tr>
+                        <td>Колір</td>
+                        <td><input type="color"></td>
+                    </tr>
+                    <tr>
+                        <td>Комфорт</td>
+                        <td>
+                            <input type="checkbox" name="Комфорт" value="Люк"> Люк
+                            <input type="checkbox" name="Комфорт" value="Шкіряний салон"> Шкіряний салон
+                            <input type="checkbox" name="Комфорт" value="Підігрів сидінь"> Підігрів сидінь
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Шукати" style="padding: 10px 30px; margin: 20px 200px;">
+        </form>
+    </div>
 </body>
 </html>
